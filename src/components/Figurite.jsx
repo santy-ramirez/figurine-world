@@ -4,15 +4,16 @@ import ImageIn from "./ImageIn";
 import Height from "./Height";
 import Bandera from "./Bandera";
 import Name from "./Name";
+import Coper from "./Croper";
 
 function Figurite() {
   return (
-    <div>
-      <h1>figurite</h1>
-      <ImageIn></ImageIn>
+    <div className="figu-conteiner">
+      <Coper />
       <ImageEx>
         <Height />
         <Bandera />
+        <ImageIn />
         <Name />
       </ImageEx>
     </div>

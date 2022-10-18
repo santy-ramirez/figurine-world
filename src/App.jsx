@@ -6,13 +6,13 @@ const ref = createRef();
 function App() {
   return (
     <div className="App">
+      <div ref={ref}>
+        <h1>figurite</h1>
+        <Figurite />
+      </div>
       <Pdf targetRef={ref} filename="code-example.pdf">
         {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
       </Pdf>
-
-      <div ref={ref}>
-        <Figurite />
-      </div>
     </div>
   );
 }
