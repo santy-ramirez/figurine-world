@@ -5,12 +5,14 @@ import Height from "./Height";
 import Bandera from "./Bandera";
 import Name from "./Name";
 import Coper from "./Croper";
+import KupIcon from "./KupIcon";
 
 function Figurite() {
   return (
     <div className="figu-conteiner">
       <Coper />
       <ImageEx>
+        <KupIcon />
         <Height />
         <Bandera />
         <ImageIn />
