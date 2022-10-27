@@ -1,9 +1,9 @@
 import React from "react";
 
-function Height() {
+function Height({ inputBandera }) {
   return (
     <div className="item-a">
-      <input type="text" />;
+      <input className="height_iput" type="text" value={inputBandera} />
     </div>
   );
 }

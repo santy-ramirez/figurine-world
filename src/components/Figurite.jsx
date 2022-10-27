@@ -7,16 +7,16 @@ import Name from "./Name";
 import Coper from "./Croper";
 import KupIcon from "./KupIcon";
 
-function Figurite() {
+function Figurite({ inputBandera, inputName, inputDate }) {
   return (
     <div className="figu-conteiner">
-      <Coper />
       <ImageEx>
         <KupIcon />
-        <Height />
+        <Height inputBandera={inputBandera} />
         <Bandera />
+
         <ImageIn />
-        <Name />
+        <Name inputDate={inputDate} inputName={inputName} />
       </ImageEx>
     </div>
   );

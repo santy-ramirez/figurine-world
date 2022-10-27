@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Name() {
+export default function Name({ inputName, inputDate }) {
   return (
     <div className="item-c">
-      <input type="text" />
+      <input value={inputName} className="input1" type="text" />
       <br />
-      <input className="input2" type="text" />
+      <input value={inputDate} type="date" className="input2" />
     </div>
   );
 }

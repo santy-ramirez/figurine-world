@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import Cropper from "react-cropper";
 import "cropperjs/dist/cropper.css";
 import axios from "axios";
-import image from "../assets/avatar.jpg";
+import image from "../assets/MESSI.png";
 
 const YOUR_API_KEY = "cg7Wpi47wPgwdaoevqcanJ21";
 const defaultSrc = image;
+
+
+
 function Coper(props) {
   const [image2, setImage] = useState(defaultSrc);
   const [cropper, setCropper] = useState(null);
