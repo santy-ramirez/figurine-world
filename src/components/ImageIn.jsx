@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 function ImageIn() {
-  return <div className="image-in"></div>;
+    return <div className="image-in"></div>
 }
 
-export default ImageIn;
+export default ImageIn
