@@ -28,6 +28,7 @@ function FormEdit({
                 </div>
                 <div>
                     <input
+                        className="date_input"
                         type="date"
                         onChange={onChageInputDate}
                         value={inputDate}
