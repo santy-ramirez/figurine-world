@@ -21,35 +21,37 @@ function AppFigurite() {
         setInputDate(e.target.value)
     }
     return (
-        <div className="wraper_desboardAndFigurite">
-            <div>
-                <h1>Edit</h1>
-                <Coper />
-                <FormEdit
-                    inputDate={inputDate}
-                    onChageInputDate={onChageInputDate}
-                    inputBandera={inputBandera}
-                    onChageInputBandera={onChageInputBandera}
-                    inputName={inputName}
-                    onChageInputName={onChageInputName}
-                />
-            </div>
-            <div>
-                <div ref={ref}>
-                    <h1>figurite</h1>
-                    <Figurite
-                        inputBandera={inputBandera}
-                        inputName={inputName}
+        <div className="wrapper_conteiner">
+            <div className="wraper_desboardAndFigurite">
+                <div className="edit__form">
+                    <h1>Edit Figurite</h1>
+                    <Coper />
+                    <FormEdit
                         inputDate={inputDate}
+                        onChageInputDate={onChageInputDate}
+                        inputBandera={inputBandera}
+                        onChageInputBandera={onChageInputBandera}
+                        inputName={inputName}
+                        onChageInputName={onChageInputName}
                     />
                 </div>
-                <Pdf targetRef={ref} filename="code-example.pdf">
-                    {({ toPdf }) => (
-                        <button className="button_descarga" onClick={toPdf}>
-                            Generate Pdf
-                        </button>
-                    )}
-                </Pdf>
+                <div className="figurita">
+                    <div ref={ref}>
+                        <h1>figurite</h1>
+                        <Figurite
+                            inputBandera={inputBandera}
+                            inputName={inputName}
+                            inputDate={inputDate}
+                        />
+                    </div>
+                    <Pdf targetRef={ref} filename="code-example.pdf">
+                        {({ toPdf }) => (
+                            <button className="button_descarga" onClick={toPdf}>
+                                Generate Pdf
+                            </button>
+                        )}
+                    </Pdf>
+                </div>
             </div>
         </div>
     )

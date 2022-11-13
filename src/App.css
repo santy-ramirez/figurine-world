@@ -1,8 +1,9 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-
-    text-align: center;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -15,6 +16,9 @@ color 3 #f29009
 **/
 
 .conten {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     z-index: -2;
     display: grid;
     max-width: 345px;
@@ -132,7 +136,7 @@ h1 {
         justify-content: space-around;
     }
     .App {
-        margin: 6rem 0;
+        margin: 6rem 0 0;
     }
 }
 .coper {
@@ -146,4 +150,28 @@ h1 {
 }
 .date_input {
     width: 170px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    background: rgb(238, 119, 92);
+    background: linear-gradient(
+        0deg,
+        rgb(245, 121, 94) 5%,
+        rgba(217, 60, 25, 0.185) 24%,
+        rgba(242, 145, 9, 0) 73%
+    );
+}
+.App {
+    width: 100%;
+}
+.wrapper_conteiner {
+    max-width: 1280px;
+    /* max-width: 1500px; */
+    margin: 0 auto;
+}
+.edit__form {
+    padding: 2rem;
+    border: 1px solid rgb(218, 211, 211);
 }

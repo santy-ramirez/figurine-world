@@ -5,8 +5,7 @@
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: rgba(17, 16, 16, 0.87);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -16,6 +15,43 @@
 }
 body {
     text-align: center;
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(
+        161deg,
+        rgba(255, 255, 0, 0.05) 0%,
+        rgba(255, 59, 0, 0.17) 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(
+        161deg,
+        rgba(255, 255, 0, 0.05) 0%,
+        rgba(255, 59, 0, 0.17) 100%
+    );
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(
+        161deg,
+        rgba(255, 255, 0, 0.05) 0%,
+        rgba(255, 59, 0, 0.17) 100%
+    );
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3B00', endColorstr='#FFFF00', GradientType=1 );
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(
+        161deg,
+        rgba(255, 255, 0, 0.05) 0%,
+        rgba(255, 59, 0, 0.17) 100%
+    );
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(
+        161deg,
+        rgba(255, 255, 0, 0.05) 0%,
+        rgba(255, 59, 0, 0.17) 100%
+    );
 }
 
 button {
