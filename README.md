@@ -4,4 +4,4 @@ Un generador de figuritas del mundial, hecha en react con edit en tiempo real, q
 
 ## version desktop
 
-![](./src/assets/figucaptura1.png)
+![](./src/assets/Captura%20de%20pantalla%20de%202022-11-13%2022-29-14.png)
