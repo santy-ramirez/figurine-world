@@ -36,8 +36,8 @@ function AppFigurite() {
                     />
                 </div>
                 <div className="figurita">
+                <h1>figurite</h1>
                     <div ref={ref}>
-                        <h1>figurite</h1>
                         <Figurite
                             inputBandera={inputBandera}
                             inputName={inputName}
